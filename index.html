@@ -10,7 +10,7 @@
 <body>
     <div id="head">
         <h1 id="title">Welcome to HEALTH First</h1>
-        <p id="discription">Please fill out the survey form below and complete by clicking the submit button!</p>
+        <p id="description">Please fill out the survey form below and complete by clicking the submit button!</p>
     </div>
 
     <form id="survey-form">
@@ -19,15 +19,15 @@
             <legend>PERSONAL INFORMATION</legend>
             <div class="med">
                 <label id="name-label" for="name">Name:</label>
-                <input class="text-input" id="name" placeholder="enter your name" name="name" type="text">
+                <input class="text-input" required id="name" placeholder="enter your name" name="name" type="text">
             </div>
             <div class="med">
             <label id="email-label">Email:</label>
-            <input class="text-input"  type="email" pattern="[^ @]*" placeholder="enter your email" name="email">
+            <input class="text-input" id="email" type="email" required pattern="[^ @]*" placeholder="enter your email" name="email">
             </div>
             <div>
             <label id="number-label">Tel/Mobile:</label>
-            <input class="text-input"  type="number" pattern="[0-9]*" min="10" max="15" name="email" placeholder="enter your number">
+            <input class="text-input" id="number" type="number" pattern="[0-9]*" min="10" max="15" name="email" placeholder="enter your number">
             </div>
             <div>
             <div><p>Gender</p></div>
