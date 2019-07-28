@@ -75,3 +75,8 @@ label{
 .full{
     width: 100%;
 }
+footer{
+    margin: auto;
+    background-color: green;
+    text-align: center;
+}
