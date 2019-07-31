@@ -1,82 +1,112 @@
 *{
     margin: 0px;
     font-family: sans-serif, monospace;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-areas:'auto auto auto auto auto';
+    background-color: red;
+    
 }
 #head{
+    grid-area:1/ span 6;
+    height:;
     background-color: green;
     padding: 10px;
     color: white;
     text-align: center;
 }
 #survey-form{
+    grid-area: 2 / span 6;
+    background-color:greenyellow
+}
+footer{
+    grid-area: 3/ span 6;
+    padding: 5px;
     background-color: green;
-    width: 80%;
-    margin:auto;
-    padding:10px;
+    text-align: center;
+    color: white;
 }
 legend{
     background-color: green;
-    padding: 5px;
-    border-radius: 5px;
-    border: 2px solid white;
-    color: white
-}
-fieldset{
-    border: 2px solid green;
-    border-radius: 5px;
-    width: 95%;
-    margin:10px  auto;  
-    background-color: white
-}
-p{
-    margin: 10px 5px
-}
-select{
-    height: 30px;
-    margin: 5px;
-    border: 2px solid darkgreen;
-    padding: 5px;
-    border-radius: 5px;
-}
-.text-input{
-    color: green;
-    width: 80%;
-    height: 20px;
-    margin: 5px;
-    border: 2px solid darkgreen;
-    border-radius: 5px;
-    padding: 5px;
-}
-textarea{
-    width: 80%;
-    height: auto;
-    border: 2px solid green;
-    border-radius: 5px;
-    background-color: greenyellow;
-}
-label{
-    padding: 5px 0px;
-    margin: 10px 5px;
-   
-}
-#submit{
-    margin:0px 0px 0px 20px;
-    width: 15%;
-    height: 30px;
-    border: 2px solid black;
-    background-color: greenyellow;
-    border-radius: 5px;
-}
-#submit:hover{
-    border: 2px solid white;
-    background-color: green;
+    padding: 2px;
     color: white;
 }
-.full{
-    width: 100%;
+fieldset{
+    margin: 10px;
+    background-color: white;
+    border: 2px solid green;
+    display: flex;
 }
-footer{
-    margin: auto;
+label{
+    width:60px ;
+    margin:10px;
+}
+.med{
+    display:flex;
+    width: 100%;
+    
+    padding: 5px;
+    margin:auto;
+}
+.sm{
+    display:inline-flex;
+    width: 100%;
     background-color: green;
+    padding: 5px;
+    margin:auto;
+    color: white
+}
+.text-input{
+    width: 80%;
+    border: 1px solid green;
+    height: 30px;
+    padding: 5px;
+    margin: auto;
+}
+.tag{
+   margin:auto 5px
+}
+p{
+    margin: auto 0px;
+    padding: 5px 10px 5px 0px
+}
+.v-radio{
+    margin: auto 0px
+}
+#submit{
+    height: 30px;
+    width: 100px;
+    background-color: green;
+    border: 1px solid black;
+    margin: 10px;
+    color: white;
+}
+#submit:hover{
+    background-color: greenyellow;
+    color: green;
+    border: 2px solid green;
+}
+.btn{
+ width: 100%;
+    margin: auto;
     text-align: center;
+}
+textarea{
+    border: 2px solid green;
+    width: 100%;
+    height: 100px;
+    color: white;
+    background-color: greenyellow;
+    padding: 5px;
+}
+@media screen and (max-width: 600px) {
+ .sm{
+    display:block;
+    width: 100%;
+    background-color: green;
+    padding: 5px;
+    margin:auto;
+}   
 }
